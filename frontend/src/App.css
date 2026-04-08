@@ -1,0 +1,98 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0066CC, #00E5A0);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0055AA, #00CC88);
+}
+
+/* Remove focus outline for mouse users */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #0066CC;
+    outline-offset: 2px;
+}
+
+/* Transitions for interactive elements */
+button,
+a,
+input,
+textarea {
+    transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* Prevent transition on page load */
+.App {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Selection styling */
+::selection {
+    background-color: #0066CC;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #0066CC;
+    color: white;
+}
+
+/* Gradient text animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Image hover effect */
+img {
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+img:hover {
+    filter: brightness(1.05);
+}
