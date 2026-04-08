@@ -4,6 +4,8 @@ import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { CheckCircle2, ExternalLink } from 'lucide-react';
+import FloatingShapes from './FloatingShapes';
+import AnimatedGrid from './AnimatedGrid';
 
 const Products = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,15 +38,57 @@ const Products = () => {
 
   return (
     <section id="products" ref={sectionRef} className="relative py-24 bg-white overflow-hidden">
-      {/* Background Effects */}
+      {/* Parallax Background Layers */}
       <div className="absolute inset-0 overflow-hidden">
+        <AnimatedGrid opacity={0.02} />
+        <FloatingShapes density={14} scrollOffset={2000} />
+        
+        {/* Layer 1 - Large flowing gradients */}
         <div
-          className="absolute top-1/3 left-0 w-96 h-96 bg-gradient-to-br from-[#0066CC]/10 to-transparent rounded-full blur-3xl"
-          style={{ transform: `translateX(${(scrollY - 1500) * -0.1}px)` }}
+          className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-br from-[#0066CC]/10 via-[#0066CC]/5 to-transparent rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2000) * -0.08}px, ${(scrollY - 2000) * 0.1}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
         />
         <div
-          className="absolute bottom-1/3 right-0 w-96 h-96 bg-gradient-to-bl from-[#00E5A0]/10 to-transparent rounded-full blur-3xl"
-          style={{ transform: `translateX(${(scrollY - 1500) * 0.1}px)` }}
+          className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-gradient-to-bl from-[#00E5A0]/10 via-[#00E5A0]/5 to-transparent rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2000) * 0.08}px, ${(scrollY - 2000) * 0.12}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        <div
+          className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-gradient-to-tr from-[#0066CC]/8 to-transparent rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2000) * 0.1}px, ${(scrollY - 2000) * -0.15}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+
+        {/* Layer 2 - Medium geometric shapes */}
+        <div
+          className="absolute top-1/4 left-1/2 w-48 h-48 bg-[#00E5A0]/6 rounded-full blur-2xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2000) * -0.15}px, ${(scrollY - 2000) * 0.18}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        <div
+          className="absolute bottom-1/3 right-1/3 w-56 h-56 bg-[#0066CC]/6 rotate-45 blur-2xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2000) * 0.12}px, ${(scrollY - 2000) * -0.2}px) rotate(45deg)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+
+        {/* Layer 3 - Accent circles */}
+        <div
+          className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-br from-[#00E5A0]/8 to-transparent rounded-full blur-xl"
+          style={{ 
+            transform: `translateY(${(scrollY - 2000) * 0.25}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
         />
       </div>
 

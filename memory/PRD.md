@@ -178,3 +178,34 @@ Response:
 - Parallax speed: 0.1-0.5
 - Transition duration: 300ms
 - Hover scale: 1.05
+
+## Updates - December 2025
+
+### Enhanced Parallax Effects (Latest Update)
+**Components Updated:**
+1. All sections now feature multi-layer parallax backgrounds
+2. Added `FloatingShapes.jsx` - Dynamic floating geometric shapes
+3. Added `AnimatedGrid.jsx` - Subtle grid pattern overlay
+4. Enhanced CSS with smoother transitions using cubic-bezier easing
+
+**Parallax Layers:**
+- **Layer 1 (Slowest):** Large gradient orbs - 0.05-0.15 speed
+- **Layer 2 (Medium):** Geometric shapes - 0.15-0.25 speed  
+- **Layer 3 (Fast):** Accent elements - 0.3-0.5 speed
+- **Layer 4:** Floating shapes component with varied speeds
+- **Layer 5:** Animated grid overlay
+
+**Performance Optimizations:**
+- Using `will-change: transform` for smooth GPU acceleration
+- `transform: translateZ(0)` for hardware acceleration
+- Optimized transition timing with cubic-bezier curves
+- Reduced opacity for performance (0.02-0.025)
+
+**Visual Enhancements:**
+- Multi-directional movement (X and Y axis)
+- Different speeds create depth perception
+- Smooth 0.05-0.1s transitions for fluid motion
+- 12-15 floating shapes per section
+- Subtle grid overlay at 2-2.5% opacity
+
+All sections now have immersive, buttery-smooth parallax scrolling that creates depth and enhances the technology-driven aesthetic.

@@ -30,19 +30,77 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-      {/* Parallax Background */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          transform: `translateY(${scrollY * 0.5}px)`,
-          transition: 'transform 0.1s ease-out'
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0066CC]/10 via-white to-[#00E5A0]/10" />
-        <img
-          src={heroData.backgroundAlt}
-          alt="AI Technology"
-          className="absolute inset-0 w-full h-full object-cover opacity-5"
+      {/* Multi-Layer Parallax Background */}
+      <div className="absolute inset-0 z-0">
+        {/* Layer 1 - Base gradient (slowest) */}
+        <div
+          className="absolute inset-0"
+          style={{
+            transform: `translateY(${scrollY * 0.3}px)`,
+            transition: 'transform 0.05s ease-out'
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0066CC]/10 via-white to-[#00E5A0]/10" />
+          <img
+            src={heroData.backgroundAlt}
+            alt="AI Technology"
+            className="absolute inset-0 w-full h-full object-cover opacity-5"
+          />
+        </div>
+
+        {/* Layer 2 - Large floating orbs (medium speed) */}
+        <div
+          className="absolute -top-64 -left-64 w-[800px] h-[800px] bg-gradient-to-br from-[#0066CC]/15 to-transparent rounded-full blur-3xl"
+          style={{
+            transform: `translate(${scrollY * 0.15}px, ${scrollY * 0.2}px)`,
+            transition: 'transform 0.05s ease-out'
+          }}
+        />
+        <div
+          className="absolute top-1/3 -right-64 w-[700px] h-[700px] bg-gradient-to-bl from-[#00E5A0]/15 to-transparent rounded-full blur-3xl"
+          style={{
+            transform: `translate(${scrollY * -0.15}px, ${scrollY * 0.25}px)`,
+            transition: 'transform 0.05s ease-out'
+          }}
+        />
+        <div
+          className="absolute bottom-0 left-1/3 w-[600px] h-[600px] bg-gradient-to-tr from-[#0066CC]/10 to-transparent rounded-full blur-3xl"
+          style={{
+            transform: `translate(${scrollY * 0.1}px, ${scrollY * -0.3}px)`,
+            transition: 'transform 0.05s ease-out'
+          }}
+        />
+
+        {/* Layer 3 - Medium geometric shapes (faster) */}
+        <div
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00E5A0]/8 rounded-full blur-2xl"
+          style={{
+            transform: `translate(${scrollY * -0.25}px, ${scrollY * 0.35}px)`,
+            transition: 'transform 0.05s ease-out'
+          }}
+        />
+        <div
+          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#0066CC]/8 rotate-45 blur-2xl"
+          style={{
+            transform: `translate(${scrollY * 0.2}px, ${scrollY * -0.4}px) rotate(45deg)`,
+            transition: 'transform 0.05s ease-out'
+          }}
+        />
+
+        {/* Layer 4 - Fast accent circles */}
+        <div
+          className="absolute top-1/5 right-1/3 w-48 h-48 bg-gradient-to-r from-[#00E5A0]/10 to-transparent rounded-full blur-xl"
+          style={{
+            transform: `translateY(${scrollY * 0.5}px)`,
+            transition: 'transform 0.05s ease-out'
+          }}
+        />
+        <div
+          className="absolute top-2/3 left-1/5 w-56 h-56 bg-gradient-to-l from-[#0066CC]/10 to-transparent rounded-full blur-xl"
+          style={{
+            transform: `translateY(${scrollY * 0.45}px)`,
+            transition: 'transform 0.05s ease-out'
+          }}
         />
       </div>
 

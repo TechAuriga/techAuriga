@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { aboutData } from '../data/mock';
 import { Users, Target, Award, TrendingUp } from 'lucide-react';
+import FloatingShapes from './FloatingShapes';
+import AnimatedGrid from './AnimatedGrid';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,15 +29,50 @@ const About = () => {
 
   return (
     <section id="about" ref={sectionRef} className="relative py-24 bg-white overflow-hidden">
-      {/* Background Elements */}
+      {/* Parallax Background Layers */}
       <div className="absolute inset-0 overflow-hidden">
+        <AnimatedGrid opacity={0.02} />
+        <FloatingShapes density={12} scrollOffset={800} />
+        
+        {/* Layer 1 - Slow moving circles */}
         <div
-          className="absolute top-1/4 -left-48 w-96 h-96 bg-[#0066CC]/5 rounded-full blur-3xl"
-          style={{ transform: `translateY(${(scrollY - 800) * 0.1}px)` }}
+          className="absolute top-1/4 -left-48 w-96 h-96 bg-gradient-to-br from-[#0066CC]/10 to-[#00E5A0]/10 rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 800) * 0.05}px, ${(scrollY - 800) * 0.08}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
         />
         <div
-          className="absolute bottom-1/4 -right-48 w-96 h-96 bg-[#00E5A0]/5 rounded-full blur-3xl"
-          style={{ transform: `translateY(${(scrollY - 800) * -0.1}px)` }}
+          className="absolute bottom-1/4 -right-48 w-96 h-96 bg-gradient-to-tl from-[#00E5A0]/10 to-[#0066CC]/10 rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 800) * -0.05}px, ${(scrollY - 800) * -0.08}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        
+        {/* Layer 2 - Medium speed geometric shapes */}
+        <div
+          className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#0066CC]/5 rounded-full blur-2xl"
+          style={{ 
+            transform: `translate(${(scrollY - 800) * -0.12}px, ${(scrollY - 800) * 0.15}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        <div
+          className="absolute top-1/3 right-1/4 w-72 h-72 bg-[#00E5A0]/5 rotate-45 blur-2xl"
+          style={{ 
+            transform: `translate(${(scrollY - 800) * 0.1}px, ${(scrollY - 800) * -0.12}px) rotate(45deg)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+
+        {/* Layer 3 - Fast moving accents */}
+        <div
+          className="absolute bottom-1/3 left-1/3 w-32 h-32 bg-gradient-to-r from-[#0066CC]/10 to-transparent rounded-full blur-xl"
+          style={{ 
+            transform: `translateY(${(scrollY - 800) * 0.2}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
         />
       </div>
 

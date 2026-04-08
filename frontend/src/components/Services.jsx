@@ -3,6 +3,8 @@ import { Brain, Cloud, Database, Lightbulb, ArrowRight } from 'lucide-react';
 import { servicesData } from '../data/mock';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import FloatingShapes from './FloatingShapes';
+import AnimatedGrid from './AnimatedGrid';
 
 const iconMap = {
   Brain: Brain,
@@ -39,19 +41,71 @@ const Services = () => {
 
   return (
     <section id="services" ref={sectionRef} className="relative py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
-      {/* Background Particles */}
+      {/* Parallax Background Layers */}
       <div className="absolute inset-0 overflow-hidden">
+        <AnimatedGrid opacity={0.025} />
+        <FloatingShapes density={15} scrollOffset={1200} />
+        
+        {/* Layer 1 - Large gradient orbs */}
         <div
-          className="absolute top-0 left-1/4 w-2 h-2 bg-[#0066CC] rounded-full opacity-20"
-          style={{ transform: `translateY(${scrollY * 0.3}px)` }}
+          className="absolute -top-48 left-0 w-[500px] h-[500px] bg-gradient-to-br from-[#0066CC]/8 to-transparent rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 1200) * 0.1}px, ${(scrollY - 1200) * 0.15}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
         />
         <div
-          className="absolute top-1/3 right-1/4 w-3 h-3 bg-[#00E5A0] rounded-full opacity-20"
-          style={{ transform: `translateY(${scrollY * 0.2}px)` }}
+          className="absolute top-1/3 -right-48 w-[400px] h-[400px] bg-gradient-to-bl from-[#00E5A0]/8 to-transparent rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 1200) * -0.1}px, ${(scrollY - 1200) * 0.12}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+
+        {/* Layer 2 - Medium shapes */}
+        <div
+          className="absolute top-1/4 left-1/3 w-64 h-64 bg-[#0066CC]/5 rounded-full blur-2xl"
+          style={{ 
+            transform: `translate(${(scrollY - 1200) * -0.15}px, ${(scrollY - 1200) * 0.2}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
         />
         <div
-          className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-[#0066CC] rounded-full opacity-20"
-          style={{ transform: `translateY(${scrollY * 0.15}px)` }}
+          className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-[#00E5A0]/5 rounded-full blur-2xl"
+          style={{ 
+            transform: `translate(${(scrollY - 1200) * 0.12}px, ${(scrollY - 1200) * -0.18}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+
+        {/* Layer 3 - Fast floating particles */}
+        <div
+          className="absolute top-0 left-1/4 w-3 h-3 bg-[#0066CC]/30 rounded-full shadow-lg shadow-[#0066CC]/20"
+          style={{ 
+            transform: `translateY(${(scrollY - 1200) * 0.35}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        <div
+          className="absolute top-1/3 right-1/4 w-4 h-4 bg-[#00E5A0]/30 rounded-full shadow-lg shadow-[#00E5A0]/20"
+          style={{ 
+            transform: `translate(${(scrollY - 1200) * -0.25}px, ${(scrollY - 1200) * 0.3}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        <div
+          className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-[#0066CC]/30 rounded-full shadow-lg shadow-[#0066CC]/20"
+          style={{ 
+            transform: `translateY(${(scrollY - 1200) * 0.4}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        <div
+          className="absolute top-2/3 left-1/5 w-2 h-2 bg-[#00E5A0]/40 rounded-full shadow-lg shadow-[#00E5A0]/20"
+          style={{ 
+            transform: `translateY(${(scrollY - 1200) * 0.45}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
         />
       </div>
 

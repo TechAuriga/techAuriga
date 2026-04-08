@@ -7,6 +7,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import { toast } from 'sonner';
+import FloatingShapes from './FloatingShapes';
+import AnimatedGrid from './AnimatedGrid';
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -110,12 +112,71 @@ const Contact = () => {
     }
   ];
 
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+      
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        const isInView = rect.top < window.innerHeight * 0.75;
+        setIsVisible(isInView);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section id="contact" ref={sectionRef} className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-      {/* Background Elements */}
+      {/* Parallax Background Layers */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#0066CC]/5 to-transparent rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#00E5A0]/5 to-transparent rounded-full blur-3xl" />
+        <AnimatedGrid opacity={0.025} />
+        <FloatingShapes density={13} scrollOffset={2800} />
+        
+        {/* Layer 1 - Large gradient orbs */}
+        <div 
+          className="absolute -top-48 -right-48 w-[600px] h-[600px] bg-gradient-to-bl from-[#0066CC]/10 via-[#0066CC]/5 to-transparent rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2800) * 0.1}px, ${(scrollY - 2800) * 0.12}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        <div 
+          className="absolute bottom-0 -left-48 w-[500px] h-[500px] bg-gradient-to-tr from-[#00E5A0]/10 via-[#00E5A0]/5 to-transparent rounded-full blur-3xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2800) * -0.1}px, ${(scrollY - 2800) * -0.15}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+
+        {/* Layer 2 - Medium shapes */}
+        <div 
+          className="absolute top-1/3 left-1/4 w-64 h-64 bg-[#0066CC]/6 rounded-full blur-2xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2800) * -0.12}px, ${(scrollY - 2800) * 0.18}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+        <div 
+          className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-[#00E5A0]/6 rounded-full blur-2xl"
+          style={{ 
+            transform: `translate(${(scrollY - 2800) * 0.15}px, ${(scrollY - 2800) * -0.2}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
+
+        {/* Layer 3 - Accent elements */}
+        <div 
+          className="absolute top-1/2 right-1/3 w-40 h-40 bg-gradient-to-r from-[#0066CC]/8 to-transparent rounded-full blur-xl"
+          style={{ 
+            transform: `translateY(${(scrollY - 2800) * 0.25}px)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
