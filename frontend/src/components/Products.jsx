@@ -45,21 +45,21 @@ const Products = () => {
         
         {/* Layer 1 - Large flowing gradients */}
         <div
-          className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-br from-[#0066CC]/10 via-[#0066CC]/5 to-transparent rounded-full blur-3xl"
+          className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-br from-[#1E40AF]/10 via-[#1E40AF]/5 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * -0.08}px, ${(scrollY - 2000) * 0.1}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-gradient-to-bl from-[#00E5A0]/10 via-[#00E5A0]/5 to-transparent rounded-full blur-3xl"
+          className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-gradient-to-bl from-[#3B82F6]/10 via-[#3B82F6]/5 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * 0.08}px, ${(scrollY - 2000) * 0.12}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-gradient-to-tr from-[#0066CC]/8 to-transparent rounded-full blur-3xl"
+          className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-gradient-to-tr from-[#1E40AF]/8 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * 0.1}px, ${(scrollY - 2000) * -0.15}px)`,
             transition: 'transform 0.1s ease-out'
@@ -68,14 +68,14 @@ const Products = () => {
 
         {/* Layer 2 - Medium geometric shapes */}
         <div
-          className="absolute top-1/4 left-1/2 w-48 h-48 bg-[#00E5A0]/6 rounded-full blur-2xl"
+          className="absolute top-1/4 left-1/2 w-48 h-48 bg-[#3B82F6]/6 rounded-full blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * -0.15}px, ${(scrollY - 2000) * 0.18}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute bottom-1/3 right-1/3 w-56 h-56 bg-[#0066CC]/6 rotate-45 blur-2xl"
+          className="absolute bottom-1/3 right-1/3 w-56 h-56 bg-[#1E40AF]/6 rotate-45 blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * 0.12}px, ${(scrollY - 2000) * -0.2}px) rotate(45deg)`,
             transition: 'transform 0.1s ease-out'
@@ -84,7 +84,7 @@ const Products = () => {
 
         {/* Layer 3 - Accent circles */}
         <div
-          className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-br from-[#00E5A0]/8 to-transparent rounded-full blur-xl"
+          className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-br from-[#3B82F6]/8 to-transparent rounded-full blur-xl"
           style={{ 
             transform: `translateY(${(scrollY - 2000) * 0.25}px)`,
             transition: 'transform 0.1s ease-out'
@@ -99,11 +99,11 @@ const Products = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
           }`}
         >
-          <span className="text-[#0066CC] font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#1E40AF] font-semibold text-sm uppercase tracking-wider">
             Our Products
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
-            <span className="bg-gradient-to-r from-[#0066CC] to-[#00E5A0] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] bg-clip-text text-transparent">
               AI-Powered Software Solutions
             </span>
           </h2>
@@ -122,7 +122,7 @@ const Products = () => {
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <Card className="h-full border-2 border-gray-200 hover:border-[#0066CC] hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+              <Card className="h-full border-2 border-gray-200 hover:border-[#1E40AF] hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                 {/* Product Image */}
                 <div className="relative h-56 overflow-hidden">
                   <img
@@ -134,7 +134,7 @@ const Products = () => {
                   
                   {/* Category Badge */}
                   <div className="absolute top-4 left-4">
-                    <Badge className="bg-white/90 text-[#0066CC] hover:bg-white font-semibold">
+                    <Badge className="bg-white/90 text-[#1E40AF] hover:bg-white font-semibold">
                       {product.category}
                     </Badge>
                   </div>
@@ -156,7 +156,7 @@ const Products = () => {
                   <div className="space-y-3 mb-6">
                     {product.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start">
-                        <CheckCircle2 className="text-[#00E5A0] mt-0.5 mr-3 flex-shrink-0" size={18} />
+                        <CheckCircle2 className="text-[#3B82F6] mt-0.5 mr-3 flex-shrink-0" size={18} />
                         <span className="text-gray-700 text-sm">{feature}</span>
                       </div>
                     ))}
@@ -164,7 +164,7 @@ const Products = () => {
 
                   <Button
                     onClick={scrollToDemo}
-                    className="w-full bg-gradient-to-r from-[#0066CC] to-[#00E5A0] hover:opacity-90 text-white font-semibold group/btn"
+                    className="w-full bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] hover:opacity-90 text-white font-semibold group/btn"
                   >
                     Request Demo
                     <ExternalLink className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
@@ -181,9 +181,9 @@ const Products = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
           }`}
         >
-          <div className="bg-gradient-to-r from-[#0066CC]/10 via-white to-[#00E5A0]/10 border-2 border-[#0066CC]/20 rounded-2xl p-12">
+          <div className="bg-gradient-to-r from-[#1E40AF]/10 via-white to-[#3B82F6]/10 border-2 border-[#1E40AF]/20 rounded-2xl p-12">
             <h3 className="text-3xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-[#0066CC] to-[#00E5A0] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] bg-clip-text text-transparent">
                 Need a Custom Solution?
               </span>
             </h3>
@@ -193,7 +193,7 @@ const Products = () => {
             <Button
               onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
               size="lg"
-              className="bg-gradient-to-r from-[#0066CC] to-[#00E5A0] hover:opacity-90 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] hover:opacity-90 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
             >
               Discuss Your Project
             </Button>

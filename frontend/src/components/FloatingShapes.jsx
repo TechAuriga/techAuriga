@@ -21,7 +21,7 @@ const FloatingShapes = ({ density = 15, scrollOffset = 0 }) => {
       left: Math.random() * 100,
       top: Math.random() * 100,
       speed: Math.random() * 0.3 + 0.1,
-      color: i % 2 === 0 ? '#0066CC' : '#00E5A0',
+      color: i % 2 === 0 ? '#1E40AF' : '#3B82F6',
       opacity: Math.random() * 0.15 + 0.05,
       shape: i % 3 === 0 ? 'square' : i % 3 === 1 ? 'circle' : 'triangle',
       delay: Math.random() * 2

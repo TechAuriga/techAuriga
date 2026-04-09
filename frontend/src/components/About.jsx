@@ -36,14 +36,14 @@ const About = () => {
         
         {/* Layer 1 - Slow moving circles */}
         <div
-          className="absolute top-1/4 -left-48 w-96 h-96 bg-gradient-to-br from-[#0066CC]/10 to-[#00E5A0]/10 rounded-full blur-3xl"
+          className="absolute top-1/4 -left-48 w-96 h-96 bg-gradient-to-br from-[#1E40AF]/10 to-[#3B82F6]/10 rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 800) * 0.05}px, ${(scrollY - 800) * 0.08}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute bottom-1/4 -right-48 w-96 h-96 bg-gradient-to-tl from-[#00E5A0]/10 to-[#0066CC]/10 rounded-full blur-3xl"
+          className="absolute bottom-1/4 -right-48 w-96 h-96 bg-gradient-to-tl from-[#3B82F6]/10 to-[#2563EB]/10 rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 800) * -0.05}px, ${(scrollY - 800) * -0.08}px)`,
             transition: 'transform 0.1s ease-out'
@@ -52,14 +52,14 @@ const About = () => {
         
         {/* Layer 2 - Medium speed geometric shapes */}
         <div
-          className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#0066CC]/5 rounded-full blur-2xl"
+          className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#1E40AF]/5 rounded-full blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 800) * -0.12}px, ${(scrollY - 800) * 0.15}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute top-1/3 right-1/4 w-72 h-72 bg-[#00E5A0]/5 rotate-45 blur-2xl"
+          className="absolute top-1/3 right-1/4 w-72 h-72 bg-[#3B82F6]/5 rotate-45 blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 800) * 0.1}px, ${(scrollY - 800) * -0.12}px) rotate(45deg)`,
             transition: 'transform 0.1s ease-out'
@@ -68,7 +68,7 @@ const About = () => {
 
         {/* Layer 3 - Fast moving accents */}
         <div
-          className="absolute bottom-1/3 left-1/3 w-32 h-32 bg-gradient-to-r from-[#0066CC]/10 to-transparent rounded-full blur-xl"
+          className="absolute bottom-1/3 left-1/3 w-32 h-32 bg-gradient-to-r from-[#2563EB]/10 to-transparent rounded-full blur-xl"
           style={{ 
             transform: `translateY(${(scrollY - 800) * 0.2}px)`,
             transition: 'transform 0.1s ease-out'
@@ -87,7 +87,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={aboutData.image}
-                alt="TechAuriga Team"
+                alt="techAuriga Team"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0066CC]/30 to-transparent" />
@@ -96,7 +96,7 @@ const About = () => {
             {/* Floating Stats Card */}
             <div className="absolute -bottom-8 -right-8 bg-white rounded-xl p-6 shadow-2xl border border-gray-100">
               <div className="text-center">
-                <div className="text-4xl font-bold bg-gradient-to-r from-[#0066CC] to-[#00E5A0] bg-clip-text text-transparent">
+                <div className="text-4xl font-bold bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] bg-clip-text text-transparent">
                   200+
                 </div>
                 <div className="text-sm text-gray-600 mt-1">Team Members</div>
@@ -111,11 +111,11 @@ const About = () => {
             }`}
           >
             <div>
-              <span className="text-[#0066CC] font-semibold text-sm uppercase tracking-wider">
+              <span className="text-[#1E40AF] font-semibold text-sm uppercase tracking-wider">
                 {aboutData.subtitle}
               </span>
               <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
-                <span className="bg-gradient-to-r from-[#0066CC] to-[#00E5A0] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#1E40AF] via-[#2563EB] to-[#3B82F6] bg-clip-text text-transparent">
                   {aboutData.title}
                 </span>
               </h2>
@@ -125,7 +125,7 @@ const About = () => {
               {aboutData.description}
             </p>
 
-            <div className="bg-gradient-to-r from-[#0066CC]/10 to-[#00E5A0]/10 border-l-4 border-[#0066CC] rounded-r-xl p-6">
+            <div className="bg-gradient-to-r from-[#1E40AF]/10 to-[#3B82F6]/10 border-l-4 border-[#1E40AF] rounded-r-xl p-6">
               <p className="text-gray-700 italic leading-relaxed">
                 {aboutData.mission}
               </p>

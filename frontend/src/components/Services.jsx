@@ -48,14 +48,14 @@ const Services = () => {
         
         {/* Layer 1 - Large gradient orbs */}
         <div
-          className="absolute -top-48 left-0 w-[500px] h-[500px] bg-gradient-to-br from-[#0066CC]/8 to-transparent rounded-full blur-3xl"
+          className="absolute -top-48 left-0 w-[500px] h-[500px] bg-gradient-to-br from-[#1E40AF]/8 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 1200) * 0.1}px, ${(scrollY - 1200) * 0.15}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute top-1/3 -right-48 w-[400px] h-[400px] bg-gradient-to-bl from-[#00E5A0]/8 to-transparent rounded-full blur-3xl"
+          className="absolute top-1/3 -right-48 w-[400px] h-[400px] bg-gradient-to-bl from-[#3B82F6]/8 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 1200) * -0.1}px, ${(scrollY - 1200) * 0.12}px)`,
             transition: 'transform 0.1s ease-out'
@@ -64,14 +64,14 @@ const Services = () => {
 
         {/* Layer 2 - Medium shapes */}
         <div
-          className="absolute top-1/4 left-1/3 w-64 h-64 bg-[#0066CC]/5 rounded-full blur-2xl"
+          className="absolute top-1/4 left-1/3 w-64 h-64 bg-[#2563EB]/5 rounded-full blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 1200) * -0.15}px, ${(scrollY - 1200) * 0.2}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-[#00E5A0]/5 rounded-full blur-2xl"
+          className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-[#1E40AF]/5 rounded-full blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 1200) * 0.12}px, ${(scrollY - 1200) * -0.18}px)`,
             transition: 'transform 0.1s ease-out'
@@ -80,28 +80,28 @@ const Services = () => {
 
         {/* Layer 3 - Fast floating particles */}
         <div
-          className="absolute top-0 left-1/4 w-3 h-3 bg-[#0066CC]/30 rounded-full shadow-lg shadow-[#0066CC]/20"
+          className="absolute top-0 left-1/4 w-3 h-3 bg-[#1E40AF]/30 rounded-full shadow-lg shadow-[#1E40AF]/20"
           style={{ 
             transform: `translateY(${(scrollY - 1200) * 0.35}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute top-1/3 right-1/4 w-4 h-4 bg-[#00E5A0]/30 rounded-full shadow-lg shadow-[#00E5A0]/20"
+          className="absolute top-1/3 right-1/4 w-4 h-4 bg-[#3B82F6]/30 rounded-full shadow-lg shadow-[#3B82F6]/20"
           style={{ 
             transform: `translate(${(scrollY - 1200) * -0.25}px, ${(scrollY - 1200) * 0.3}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-[#0066CC]/30 rounded-full shadow-lg shadow-[#0066CC]/20"
+          className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-[#2563EB]/30 rounded-full shadow-lg shadow-[#2563EB]/20"
           style={{ 
             transform: `translateY(${(scrollY - 1200) * 0.4}px)`,
             transition: 'transform 0.1s ease-out'
           }}
         />
         <div
-          className="absolute top-2/3 left-1/5 w-2 h-2 bg-[#00E5A0]/40 rounded-full shadow-lg shadow-[#00E5A0]/20"
+          className="absolute top-2/3 left-1/5 w-2 h-2 bg-[#1E40AF]/40 rounded-full shadow-lg shadow-[#1E40AF]/20"
           style={{ 
             transform: `translateY(${(scrollY - 1200) * 0.45}px)`,
             transition: 'transform 0.1s ease-out'
@@ -116,11 +116,11 @@ const Services = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
           }`}
         >
-          <span className="text-[#0066CC] font-semibold text-sm uppercase tracking-wider">
+          <span className="text-[#1E40AF] font-semibold text-sm uppercase tracking-wider">
             Our Services
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
-            <span className="bg-gradient-to-r from-[#0066CC] to-[#00E5A0] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#1E40AF] via-[#2563EB] to-[#3B82F6] bg-clip-text text-transparent">
               Cutting-Edge AI Solutions
             </span>
           </h2>
@@ -143,7 +143,7 @@ const Services = () => {
                 onMouseEnter={() => setHoveredCard(service.id)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <Card className="h-full border-2 border-gray-200 hover:border-[#0066CC] hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <Card className="h-full border-2 border-gray-200 hover:border-[#1E40AF] hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                   {/* Image Header */}
                   <div className="relative h-48 overflow-hidden">
                     <img
@@ -155,14 +155,14 @@ const Services = () => {
                     
                     {/* Icon Overlay */}
                     <div className="absolute bottom-4 left-4">
-                      <div className="w-14 h-14 bg-gradient-to-br from-[#0066CC] to-[#00E5A0] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-14 h-14 bg-gradient-to-br from-[#1E40AF] to-[#3B82F6] rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                         <Icon className="text-white" size={28} />
                       </div>
                     </div>
                   </div>
 
                   <CardHeader>
-                    <CardTitle className="text-2xl font-bold text-gray-900 group-hover:text-[#0066CC] transition-colors duration-300">
+                    <CardTitle className="text-2xl font-bold text-gray-900 group-hover:text-[#1E40AF] transition-colors duration-300">
                       {service.title}
                     </CardTitle>
                     <CardDescription className="text-gray-600 text-base leading-relaxed">
@@ -175,7 +175,7 @@ const Services = () => {
                     <ul className="space-y-3 mb-6">
                       {service.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start">
-                          <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#0066CC] to-[#00E5A0] rounded-full mt-2 mr-3 flex-shrink-0" />
+                          <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] rounded-full mt-2 mr-3 flex-shrink-0" />
                           <span className="text-gray-700 text-sm">{feature}</span>
                         </li>
                       ))}
@@ -184,7 +184,7 @@ const Services = () => {
                     <Button
                       onClick={scrollToContact}
                       variant="ghost"
-                      className="w-full text-[#0066CC] hover:bg-[#0066CC]/10 font-semibold group/btn"
+                      className="w-full text-[#1E40AF] hover:bg-[#1E40AF]/10 font-semibold group/btn"
                     >
                       Learn More
                       <ArrowRight

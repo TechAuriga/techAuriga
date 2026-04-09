@@ -45,11 +45,11 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <img
               src="https://customer-assets.emergentagent.com/job_97cd66e9-80d9-498f-b6f5-063f23992ae8/artifacts/1fpvaz3z_1000181263.png"
-              alt="TechAuriga Logo"
+              alt="techAuriga Logo"
               className="h-12 w-12 object-contain"
             />
-            <span className="text-2xl font-bold bg-gradient-to-r from-[#0066CC] to-[#00E5A0] bg-clip-text text-transparent">
-              TechAuriga
+            <span className="text-2xl font-bold bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] bg-clip-text text-transparent">
+              techAuriga
             </span>
           </div>
 
@@ -59,7 +59,7 @@ const Header = () => {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className={`text-base font-medium transition-colors duration-200 hover:text-[#0066CC] ${
+                className={`text-base font-medium transition-colors duration-200 hover:text-[#1E40AF] ${
                   isScrolled ? 'text-gray-700' : 'text-white'
                 }`}
               >
@@ -72,7 +72,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button
               onClick={() => scrollToSection('#contact')}
-              className="bg-gradient-to-r from-[#0066CC] to-[#00E5A0] hover:opacity-90 text-white font-medium px-6 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] hover:opacity-90 text-white font-medium px-6 py-2 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Get Started
             </Button>
@@ -99,14 +99,14 @@ const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-left text-base font-medium text-gray-700 hover:text-[#0066CC] transition-colors duration-200 py-2"
+                  className="text-left text-base font-medium text-gray-700 hover:text-[#1E40AF] transition-colors duration-200 py-2"
                 >
                   {link.name}
                 </button>
               ))}
               <Button
                 onClick={() => scrollToSection('#contact')}
-                className="bg-gradient-to-r from-[#0066CC] to-[#00E5A0] hover:opacity-90 text-white font-medium w-full"
+                className="bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] hover:opacity-90 text-white font-medium w-full"
               >
                 Get Started
               </Button>

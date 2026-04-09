@@ -21,10 +21,10 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src="https://customer-assets.emergentagent.com/job_97cd66e9-80d9-498f-b6f5-063f23992ae8/artifacts/1fpvaz3z_1000181263.png"
-                alt="TechAuriga Logo"
+                alt="techAuriga Logo"
                 className="h-10 w-10 object-contain"
               />
-              <span className="text-2xl font-bold bg-gradient-to-r from-[#0066CC] to-[#00E5A0] bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] bg-clip-text text-transparent">
                 {footerData.company.name}
               </span>
             </div>
@@ -33,8 +33,8 @@ const Footer = () => {
             </p>
             <div className="space-y-3 text-sm text-gray-600">
               <div className="flex items-start">
-                <Mail className="mr-2 mt-0.5 flex-shrink-0 text-[#0066CC]" size={16} />
-                <a href={`mailto:${footerData.company.email}`} className="hover:text-[#0066CC] transition-colors">
+                <Mail className="mr-2 mt-0.5 flex-shrink-0 text-[#1E40AF]" size={16} />
+                <a href={`mailto:${footerData.company.email}`} className="hover:text-[#1E40AF] transition-colors">
                   {footerData.company.email}
                 </a>
               </div>
@@ -49,7 +49,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-600 hover:text-[#0066CC] transition-colors text-sm"
+                    className="text-gray-600 hover:text-[#1E40AF] transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -66,7 +66,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-600 hover:text-[#0066CC] transition-colors text-sm"
+                    className="text-gray-600 hover:text-[#1E40AF] transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -83,7 +83,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-600 hover:text-[#0066CC] transition-colors text-sm"
+                    className="text-gray-600 hover:text-[#1E40AF] transition-colors text-sm"
                   >
                     {link.name}
                   </a>
@@ -110,7 +110,7 @@ const Footer = () => {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 bg-white border border-gray-300 rounded-lg flex items-center justify-center text-gray-600 hover:bg-gradient-to-r hover:from-[#0066CC] hover:to-[#00E5A0] hover:text-white hover:border-transparent transition-all duration-300 hover:scale-110"
+                    className="w-10 h-10 bg-white border border-gray-300 rounded-lg flex items-center justify-center text-gray-600 hover:bg-gradient-to-r hover:from-[#1E40AF] hover:to-[#3B82F6] hover:text-white hover:border-transparent transition-all duration-300 hover:scale-110"
                   >
                     <Icon size={18} />
                   </a>
@@ -119,10 +119,10 @@ const Footer = () => {
             </div>
 
             <div className="flex items-center space-x-6 text-sm text-gray-600">
-              <a href="#privacy" className="hover:text-[#0066CC] transition-colors">
+              <a href="#privacy" className="hover:text-[#1E40AF] transition-colors">
                 Privacy Policy
               </a>
-              <a href="#terms" className="hover:text-[#0066CC] transition-colors">
+              <a href="#terms" className="hover:text-[#1E40AF] transition-colors">
                 Terms of Service
               </a>
             </div>

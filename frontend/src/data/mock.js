@@ -1,10 +1,10 @@
-// Mock data for TechAuriga website
+// Mock data for techAuriga website
 
 export const heroData = {
   title: "Transform Your Business with AI Innovation",
-  subtitle: "TechAuriga delivers cutting-edge AI solutions and software services that drive digital transformation",
-  cta1: "Request Demo",
-  cta2: "Contact Us",
+  subtitle: "techAuriga delivers cutting-edge AI solutions and software services that drive digital transformation",
+  cta1: "Get Started",
+  cta2: "Learn More",
   heroImage: "https://images.unsplash.com/photo-1672581437674-3186b17b405a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3NzU1ODI0MTJ8MA&ixlib=rb-4.1.0&q=85",
   backgroundAlt: "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDB8fHx8MTc3NTU0NDQyMHww&ixlib=rb-4.1.0&q=85"
 };
@@ -85,46 +85,31 @@ export const productsData = [
   }
 ];
 
-export const contactFormFields = {
-  demo: {
-    title: "Request a Demo",
-    description: "See our AI solutions in action",
-    fields: ["name", "email", "company", "phone", "productInterest", "message"]
-  },
-  contact: {
-    title: "Contact Us",
-    description: "Get in touch with our team",
-    fields: ["name", "email", "company", "phone", "subject", "message"]
-  }
+export const contactData = {
+  title: "Get In Touch",
+  subtitle: "Ready to Transform Your Business?",
+  description: "Contact us to discuss how techAuriga can help accelerate your AI transformation journey.",
+  email: "info@techauriga.com",
+  phone: "+1 (555) 123-4567",
+  locations: [
+    {
+      city: "Denver",
+      state: "Colorado",
+      address: "1234 Tech Boulevard, Denver, CO 80202",
+      coordinates: { lat: 39.7392, lng: -104.9903 }
+    },
+    {
+      city: "Austin",
+      state: "Texas",
+      address: "5678 Innovation Drive, Austin, TX 78701",
+      coordinates: { lat: 30.2672, lng: -97.7431 }
+    }
+  ]
 };
-
-export const testimonials = [
-  {
-    id: 1,
-    name: "Sarah Johnson",
-    position: "CTO, TechCorp Solutions",
-    content: "TechAuriga transformed our business with their innovative AI solutions. The machine learning models they developed increased our efficiency by 45%.",
-    rating: 5
-  },
-  {
-    id: 2,
-    name: "Michael Chen",
-    position: "Director of Analytics, DataFlow Inc",
-    content: "Their expertise in Azure AI and Microsoft Fabric is unmatched. The team delivered beyond our expectations.",
-    rating: 5
-  },
-  {
-    id: 3,
-    name: "Emily Rodriguez",
-    position: "VP Engineering, CloudWorks",
-    content: "Professional, innovative, and results-driven. TechAuriga is our go-to partner for all AI initiatives.",
-    rating: 5
-  }
-];
 
 export const footerData = {
   company: {
-    name: "TechAuriga",
+    name: "techAuriga",
     description: "Leading AI-based software company delivering innovative products and services worldwide.",
     address: "123 Tech Boulevard, Silicon Valley, CA 94025",
     phone: "+1 (555) 123-4567",
