@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="https://customer-assets.emergentagent.com/job_97cd66e9-80d9-498f-b6f5-063f23992ae8/artifacts/1fpvaz3z_1000181263.png"
+                src="https://customer-assets.emergentagent.com/job_techauriga-ai/artifacts/89kqrxz4_20260408_164039.png"
                 alt="techAuriga Logo"
                 className="h-10 w-10 object-contain"
               />
