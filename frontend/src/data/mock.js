@@ -82,6 +82,30 @@ export const productsData = [
     image: "https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwyfHxzb2Z0d2FyZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzc1NjA4MTIyfDA&ixlib=rb-4.1.0&q=85",
     features: ["Azure Integration", "Auto-scaling", "Security & Compliance", "Monitoring & Analytics"],
     category: "Infrastructure"
+  },
+  {
+    id: 4,
+    title: "AI Document Service",
+    description: "Transform your document workflows with intelligent automation. Extract, process, and manage documents using advanced AI-powered OCR and data extraction technology.",
+    image: "https://images.unsplash.com/photo-1658142034594-12b5c411069d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxkb2N1bWVudCUyMHNjYW5uaW5nJTIwYXV0b21hdGlvbiUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzc2MTAxMzgzfDA&ixlib=rb-4.1.0&q=85",
+    features: ["AI Document Automation", "Document Data Extraction", "Intelligent Document Processing", "AI OCR Service", "Document Workflow Automation"],
+    category: "Document AI"
+  },
+  {
+    id: 5,
+    title: "AI Medical Coding Service",
+    description: "Revolutionize healthcare billing with autonomous AI-powered medical coding. Automate ICD-10 coding, reduce errors, and accelerate revenue cycles for healthcare providers.",
+    image: "https://images.unsplash.com/photo-1758691462848-ba1e929da259?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwyfHxtZWRpY2FsJTIwaGVhbHRoY2FyZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzc2MTAxMzgzfDA&ixlib=rb-4.1.0&q=85",
+    features: ["Medical Coding Automation", "AI Medical Billing and Coding", "ICD-10 Coding Automation", "Healthcare Coding Services", "Autonomous Coding Solution"],
+    category: "Healthcare AI"
+  },
+  {
+    id: 6,
+    title: "AI Blind Assistant Service",
+    description: "Empowering independence through AI-driven assistive technology. Provide voice-guided assistance, intelligent screen reading, and accessibility solutions for visually impaired users.",
+    image: "https://images.unsplash.com/photo-1767652457496-b933c31fd465?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzZ8MHwxfHNlYXJjaHwyfHxhc3Npc3RpdmUlMjB0ZWNobm9sb2d5JTIwYWNjZXNzaWJpbGl0eXxlbnwwfHx8fDE3NzYxMDEzODN8MA&ixlib=rb-4.1.0&q=85",
+    features: ["Blind Assistance AI", "AI Assistive Technology", "Accessibility AI Service", "Screen Reading Automation", "Voice-Guided Assistance Solution"],
+    category: "Accessibility AI"
   }
 ];
 
