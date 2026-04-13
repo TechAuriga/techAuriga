@@ -37,7 +37,7 @@ const FloatingShapes = ({ density = 15, scrollOffset = 0 }) => {
         return (
           <div
             key={shape.id}
-            className="absolute transition-transform duration-100 ease-out"
+            className="absolute transition-transform duration-75 ease-linear"
             style={{
               left: `${shape.left}%`,
               top: `${shape.top}%`,

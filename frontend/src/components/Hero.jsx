@@ -37,7 +37,7 @@ const Hero = () => {
           className="absolute inset-0"
           style={{
             transform: `translateY(${scrollY * 0.3}px)`,
-            transition: 'transform 0.05s ease-out'
+            transition: 'transform 0.05s linear'
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-[#1E40AF]/10 via-white to-[#3B82F6]/10" />
@@ -53,21 +53,21 @@ const Hero = () => {
           className="absolute -top-64 -left-64 w-[800px] h-[800px] bg-gradient-to-br from-[#1E40AF]/15 to-transparent rounded-full blur-3xl"
           style={{
             transform: `translate(${scrollY * 0.15}px, ${scrollY * 0.2}px)`,
-            transition: 'transform 0.05s ease-out'
+            transition: 'transform 0.05s linear'
           }}
         />
         <div
           className="absolute top-1/3 -right-64 w-[700px] h-[700px] bg-gradient-to-bl from-[#3B82F6]/15 to-transparent rounded-full blur-3xl"
           style={{
             transform: `translate(${scrollY * -0.15}px, ${scrollY * 0.25}px)`,
-            transition: 'transform 0.05s ease-out'
+            transition: 'transform 0.05s linear'
           }}
         />
         <div
           className="absolute bottom-0 left-1/3 w-[600px] h-[600px] bg-gradient-to-tr from-[#2563EB]/10 to-transparent rounded-full blur-3xl"
           style={{
             transform: `translate(${scrollY * 0.1}px, ${scrollY * -0.3}px)`,
-            transition: 'transform 0.05s ease-out'
+            transition: 'transform 0.05s linear'
           }}
         />
 
@@ -76,14 +76,14 @@ const Hero = () => {
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#3B82F6]/8 rounded-full blur-2xl"
           style={{
             transform: `translate(${scrollY * -0.25}px, ${scrollY * 0.35}px)`,
-            transition: 'transform 0.05s ease-out'
+            transition: 'transform 0.05s linear'
           }}
         />
         <div
           className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-[#1E40AF]/8 rotate-45 blur-2xl"
           style={{
             transform: `translate(${scrollY * 0.2}px, ${scrollY * -0.4}px) rotate(45deg)`,
-            transition: 'transform 0.05s ease-out'
+            transition: 'transform 0.05s linear'
           }}
         />
 
@@ -92,14 +92,14 @@ const Hero = () => {
           className="absolute top-1/5 right-1/3 w-48 h-48 bg-gradient-to-r from-[#3B82F6]/10 to-transparent rounded-full blur-xl"
           style={{
             transform: `translateY(${scrollY * 0.5}px)`,
-            transition: 'transform 0.05s ease-out'
+            transition: 'transform 0.05s linear'
           }}
         />
         <div
           className="absolute top-2/3 left-1/5 w-56 h-56 bg-gradient-to-l from-[#2563EB]/10 to-transparent rounded-full blur-xl"
           style={{
             transform: `translateY(${scrollY * 0.45}px)`,
-            transition: 'transform 0.05s ease-out'
+            transition: 'transform 0.05s linear'
           }}
         />
       </div>
@@ -115,7 +115,7 @@ const Hero = () => {
             className="space-y-8"
             style={{
               transform: `translateY(${scrollY * -0.2}px)`,
-              transition: 'transform 0.1s ease-out'
+              transition: 'transform 0.1s linear'
             }}
           >
             <div className="inline-block">
@@ -161,7 +161,7 @@ const Hero = () => {
             className="relative hidden lg:block"
             style={{
               transform: `translateY(${scrollY * -0.3}px)`,
-              transition: 'transform 0.1s ease-out'
+              transition: 'transform 0.1s linear'
             }}
           >
             <div className="relative">

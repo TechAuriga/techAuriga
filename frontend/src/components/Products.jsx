@@ -48,21 +48,21 @@ const Products = () => {
           className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-br from-[#1E40AF]/10 via-[#1E40AF]/5 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * -0.08}px, ${(scrollY - 2000) * 0.1}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute top-1/3 -right-32 w-[500px] h-[500px] bg-gradient-to-bl from-[#3B82F6]/10 via-[#3B82F6]/5 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * 0.08}px, ${(scrollY - 2000) * 0.12}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-gradient-to-tr from-[#1E40AF]/8 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * 0.1}px, ${(scrollY - 2000) * -0.15}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
 
@@ -71,14 +71,14 @@ const Products = () => {
           className="absolute top-1/4 left-1/2 w-48 h-48 bg-[#3B82F6]/6 rounded-full blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * -0.15}px, ${(scrollY - 2000) * 0.18}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute bottom-1/3 right-1/3 w-56 h-56 bg-[#1E40AF]/6 rotate-45 blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 2000) * 0.12}px, ${(scrollY - 2000) * -0.2}px) rotate(45deg)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
 
@@ -87,7 +87,7 @@ const Products = () => {
           className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-br from-[#3B82F6]/8 to-transparent rounded-full blur-xl"
           style={{ 
             transform: `translateY(${(scrollY - 2000) * 0.25}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
       </div>

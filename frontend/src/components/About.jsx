@@ -45,14 +45,14 @@ const About = () => {
           className="absolute top-1/4 -left-48 w-96 h-96 bg-gradient-to-br from-[#1E40AF]/10 to-[#3B82F6]/10 rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 800) * 0.05}px, ${(scrollY - 800) * 0.08}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute bottom-1/4 -right-48 w-96 h-96 bg-gradient-to-tl from-[#3B82F6]/10 to-[#2563EB]/10 rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 800) * -0.05}px, ${(scrollY - 800) * -0.08}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         
@@ -61,14 +61,14 @@ const About = () => {
           className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#1E40AF]/5 rounded-full blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 800) * -0.12}px, ${(scrollY - 800) * 0.15}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute top-1/3 right-1/4 w-72 h-72 bg-[#3B82F6]/5 rotate-45 blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 800) * 0.1}px, ${(scrollY - 800) * -0.12}px) rotate(45deg)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
 
@@ -77,7 +77,7 @@ const About = () => {
           className="absolute bottom-1/3 left-1/3 w-32 h-32 bg-gradient-to-r from-[#2563EB]/10 to-transparent rounded-full blur-xl"
           style={{ 
             transform: `translateY(${(scrollY - 800) * 0.2}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
       </div>

@@ -59,8 +59,10 @@ const Header = () => {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className={`text-base font-medium transition-colors duration-200 hover:text-[#1E40AF] ${
-                  isScrolled ? 'text-gray-700' : 'text-white'
+                className={`text-base font-medium transition-colors duration-200 ${
+                  isScrolled 
+                    ? 'text-[#1E40AF] hover:text-[#3B82F6]' 
+                    : 'text-[#1E40AF] hover:text-[#60A5FA]'
                 }`}
               >
                 {link.name}
@@ -84,9 +86,9 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={isScrolled ? 'text-gray-700' : 'text-white'} size={24} />
+              <X className={isScrolled ? 'text-gray-700' : 'text-[#1E40AF]'} size={24} />
             ) : (
-              <Menu className={isScrolled ? 'text-gray-700' : 'text-white'} size={24} />
+              <Menu className={isScrolled ? 'text-gray-700' : 'text-[#1E40AF]'} size={24} />
             )}
           </button>
         </div>

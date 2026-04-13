@@ -3,7 +3,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Optimize parallax performance */
+/* Optimize parallax performance - smoother bidirectional scrolling */
 * {
     will-change: auto;
 }
@@ -12,6 +12,16 @@ html {
     will-change: transform;
     transform: translateZ(0);
     backface-visibility: hidden;
+    transition: transform 0.05s linear;
+}
+
+/* Smoother parallax for all sections */
+section {
+    position: relative;
+}
+
+section > div[style*="transform"] {
+    transition: transform 0.05s linear !important;
 }
 
 /* Custom scrollbar */

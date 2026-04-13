@@ -51,14 +51,14 @@ const Services = () => {
           className="absolute -top-48 left-0 w-[500px] h-[500px] bg-gradient-to-br from-[#1E40AF]/8 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 1200) * 0.1}px, ${(scrollY - 1200) * 0.15}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute top-1/3 -right-48 w-[400px] h-[400px] bg-gradient-to-bl from-[#3B82F6]/8 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 1200) * -0.1}px, ${(scrollY - 1200) * 0.12}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
 
@@ -67,14 +67,14 @@ const Services = () => {
           className="absolute top-1/4 left-1/3 w-64 h-64 bg-[#2563EB]/5 rounded-full blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 1200) * -0.15}px, ${(scrollY - 1200) * 0.2}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-[#1E40AF]/5 rounded-full blur-2xl"
           style={{ 
             transform: `translate(${(scrollY - 1200) * 0.12}px, ${(scrollY - 1200) * -0.18}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
 
@@ -83,28 +83,28 @@ const Services = () => {
           className="absolute top-0 left-1/4 w-3 h-3 bg-[#1E40AF]/30 rounded-full shadow-lg shadow-[#1E40AF]/20"
           style={{ 
             transform: `translateY(${(scrollY - 1200) * 0.35}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute top-1/3 right-1/4 w-4 h-4 bg-[#3B82F6]/30 rounded-full shadow-lg shadow-[#3B82F6]/20"
           style={{ 
             transform: `translate(${(scrollY - 1200) * -0.25}px, ${(scrollY - 1200) * 0.3}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-[#2563EB]/30 rounded-full shadow-lg shadow-[#2563EB]/20"
           style={{ 
             transform: `translateY(${(scrollY - 1200) * 0.4}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div
           className="absolute top-2/3 left-1/5 w-2 h-2 bg-[#1E40AF]/40 rounded-full shadow-lg shadow-[#1E40AF]/20"
           style={{ 
             transform: `translateY(${(scrollY - 1200) * 0.45}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
       </div>

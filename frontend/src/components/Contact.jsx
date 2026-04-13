@@ -38,7 +38,7 @@ const Contact = () => {
           className="absolute inset-0 opacity-5"
           style={{ 
             transform: `translateY(${(scrollY - 2800) * 0.15}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         >
           <svg className="w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
@@ -78,14 +78,14 @@ const Contact = () => {
           className="absolute -top-48 -right-48 w-[600px] h-[600px] bg-gradient-to-bl from-[#1E40AF]/10 via-[#3B82F6]/5 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 2800) * 0.1}px, ${(scrollY - 2800) * 0.12}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
         <div 
           className="absolute bottom-0 -left-48 w-[500px] h-[500px] bg-gradient-to-tr from-[#2563EB]/10 via-[#3B82F6]/5 to-transparent rounded-full blur-3xl"
           style={{ 
             transform: `translate(${(scrollY - 2800) * -0.1}px, ${(scrollY - 2800) * -0.15}px)`,
-            transition: 'transform 0.1s ease-out'
+            transition: 'transform 0.1s linear'
           }}
         />
       </div>
