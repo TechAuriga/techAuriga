@@ -183,12 +183,9 @@ const Contact = () => {
                         <MapPin className="text-white" size={24} />
                       </div>
                       <div>
-                        <h4 className="text-xl font-bold text-gray-900 mb-1">
+                        <h4 className="text-xl font-bold text-gray-900">
                           {location.city}, {location.state}
                         </h4>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                          {location.address}
-                        </p>
                       </div>
                     </div>
                   </CardContent>

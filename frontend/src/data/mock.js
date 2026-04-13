@@ -10,17 +10,32 @@ export const heroData = {
 };
 
 export const aboutData = {
-  title: "About TechAuriga",
-  subtitle: "Leading AI Innovation Since Our Inception",
-  description: "TechAuriga is a pioneering AI-based software company dedicated to creating innovative products and delivering exceptional services to enterprises worldwide. We specialize in developing intelligent solutions that harness the power of artificial intelligence, machine learning, and cloud technologies.",
-  mission: "Our mission is to empower businesses through cutting-edge AI technology, enabling them to achieve unprecedented efficiency, insights, and growth.",
-  stats: [
-    { label: "Projects Delivered", value: "500+" },
-    { label: "Enterprise Clients", value: "150+" },
-    { label: "AI Models Deployed", value: "1000+" },
-    { label: "Team Members", value: "200+" }
-  ],
-  image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+  title: "Our Commitment",
+  subtitle: "Building Solutions That Drive Success",
+  description: "At techAuriga, we're not just coders, we're problem-solvers. Our engineers design customer-focused, cloud-based AI solutions that boost profitability, streamline workflows, and scale with your business.",
+  mission: "We serve clients in the USA, UK, Australia, and India with 24/7 availability for software support, app development, AI tools, machine learning, and automation consulting.",
+  commitments: [
+    {
+      title: "Client Success",
+      icon: "Target",
+      description: "Your success is our priority. We deliver solutions that drive measurable business outcomes."
+    },
+    {
+      title: "Quality",
+      icon: "Award",
+      description: "Excellence in every line of code. We maintain the highest standards in software development."
+    },
+    {
+      title: "Business Continuity",
+      icon: "TrendingUp",
+      description: "24/7 support across global time zones ensuring your operations never stop."
+    },
+    {
+      title: "Security",
+      icon: "Shield",
+      description: "Enterprise-grade security protecting your data and infrastructure at every level."
+    }
+  ]
 };
 
 export const servicesData = [
@@ -119,13 +134,11 @@ export const contactData = {
     {
       city: "Denver",
       state: "Colorado",
-      address: "1234 Tech Boulevard, Denver, CO 80202",
       coordinates: { lat: 39.7392, lng: -104.9903 }
     },
     {
       city: "Austin",
       state: "Texas",
-      address: "5678 Innovation Drive, Austin, TX 78701",
       coordinates: { lat: 30.2672, lng: -97.7431 }
     }
   ]

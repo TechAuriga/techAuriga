@@ -154,28 +154,6 @@ const Hero = () => {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
-              <div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] bg-clip-text text-transparent">
-                  500+
-                </div>
-                <div className="text-sm text-gray-600 mt-1">Projects</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] bg-clip-text text-transparent">
-                  150+
-                </div>
-                <div className="text-sm text-gray-600 mt-1">Clients</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] bg-clip-text text-transparent">
-                  1000+
-                </div>
-                <div className="text-sm text-gray-600 mt-1">AI Models</div>
-              </div>
-            </div>
           </div>
 
           {/* Right Content - Floating Image */}
