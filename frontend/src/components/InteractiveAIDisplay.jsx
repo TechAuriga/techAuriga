@@ -12,7 +12,7 @@ const InteractiveAIDisplay = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Main Container with Glassmorphism */}
-      <div className="relative w-full h-full bg-gradient-to-br from-[#1E40AF]/10 via-[#3B82F6]/5 to-[#60A5FA]/10 backdrop-blur-sm rounded-3xl border-2 border-[#1E40AF]/20 overflow-hidden transition-all duration-500 hover:border-[#3B82F6]/40 hover:shadow-2xl hover:shadow-[#3B82F6]/20">
+      <div className="relative w-full h-full bg-gradient-to-br from-[#1E40AF]/10 via-[#3B82F6]/5 to-[#60A5FA]/10 backdrop-blur-sm rounded-3xl border-2 border-[#1E40AF]/20 transition-all duration-500 hover:border-[#3B82F6]/40 hover:shadow-2xl hover:shadow-[#3B82F6]/20">
         
         {/* AI Background Image */}
         <div className="absolute inset-0 opacity-10">
@@ -75,7 +75,7 @@ const InteractiveAIDisplay = () => {
               >
                 <Sparkles className="text-white" size={24} />
                 {hoveredIcon === 'sparkles' && (
-                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg whitespace-nowrap">
+                  <div className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg whitespace-nowrap z-50 shadow-xl">
                     Innovation
                   </div>
                 )}
@@ -105,7 +105,7 @@ const InteractiveAIDisplay = () => {
               >
                 <Cpu className="text-white" size={24} />
                 {hoveredIcon === 'cpu' && (
-                  <div className="absolute -left-20 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg whitespace-nowrap">
+                  <div className="absolute left-full ml-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg whitespace-nowrap z-50 shadow-xl">
                     Processing
                   </div>
                 )}
@@ -120,7 +120,7 @@ const InteractiveAIDisplay = () => {
               >
                 <Network className="text-white" size={24} />
                 {hoveredIcon === 'network' && (
-                  <div className="absolute -right-20 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg whitespace-nowrap">
+                  <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg whitespace-nowrap z-50 shadow-xl">
                     Connectivity
                   </div>
                 )}
