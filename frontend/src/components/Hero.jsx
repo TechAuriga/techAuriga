@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from './ui/button';
 import ParticleBackground from './ParticleBackground';
+import InteractiveAIDisplay from './InteractiveAIDisplay';
 import { heroData } from '../data/mock';
 
 const Hero = () => {
@@ -156,7 +157,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Floating Image */}
+          {/* Right Content - Interactive AI Display */}
           <div
             className="relative hidden lg:block"
             style={{
@@ -164,34 +165,7 @@ const Hero = () => {
               transition: 'transform 0.1s linear'
             }}
           >
-            <div className="relative">
-              {/* Decorative Elements */}
-              <div className="absolute -top-4 -left-4 w-72 h-72 bg-gradient-to-br from-[#0066CC]/20 to-[#00E5A0]/20 rounded-full blur-3xl animate-pulse" />
-              <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-gradient-to-br from-[#00E5A0]/20 to-[#0066CC]/20 rounded-full blur-3xl animate-pulse delay-1000" />
-
-              {/* Main Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-                <img
-                  src={heroData.heroImage}
-                  alt="AI Innovation"
-                  className="w-full h-auto object-cover rounded-2xl transform hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0066CC]/20 to-transparent" />
-              </div>
-
-              {/* Floating Card */}
-              <div className="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md rounded-xl p-4 shadow-xl border border-gray-100 hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#1E40AF] to-[#3B82F6] rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">AI</span>
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-gray-900">AI-Powered</div>
-                    <div className="text-xs text-gray-600">Next-Gen Solutions</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <InteractiveAIDisplay />
           </div>
         </div>
       </div>
